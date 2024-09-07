@@ -1,0 +1,14 @@
+/* src/pages/ServicesPage.css */
+.services-page {
+    padding: 20px;
+  }
+  
+  .services-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services-page li {
+    margin-bottom: 10px;
+  }
+  

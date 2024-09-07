@@ -1,0 +1,32 @@
+/* src/components/Gallery.css */
+.gallery-container {
+  margin-top: 20px;
+  text-align: center; /* Центрируем заголовок */
+}
+
+.gallery-title {
+  font-size: 24px;
+  margin-bottom: 20px; /* Отступ под заголовком */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Сетка из 4 столбцов */
+  gap: 10px; /* Расстояние между изображениями */
+}
+
+.gallery-item {
+  width: 100%; /* Ширина задается по размеру сетки */
+  padding-top: 75%; /* Соотношение сторон 4:3 (75% от ширины) */
+  position: relative; /* Для абсолютного позиционирования изображения */
+}
+
+.gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Сохраняет пропорции и обрезает лишнее */
+  border-radius: 5px; /* Закругленные углы */
+}

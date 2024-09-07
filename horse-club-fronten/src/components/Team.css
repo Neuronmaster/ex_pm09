@@ -1,0 +1,31 @@
+/* src/components/Team.css */
+.team {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Центрируем членов команды */
+  list-style: none;
+  padding: 0;
+}
+
+.team-member {
+  flex: 1 0 200px; /* Задает ширину элемента около 200px */
+  max-width: 250px; /* Максимальная ширина для элементов */
+  text-align: center;
+}
+
+.team-photo-container {
+  width: 150px; /* Размер контейнера для фото */
+  height: 150px; /* Круглый размер для фото */
+  border-radius: 50%; /* Делаем фото круглыми */
+  overflow: hidden; /* Скрываем все, что выходит за границы круга */
+  margin: 0 auto 10px; /* Центрируем и добавляем отступ снизу */
+  background-size: cover; /* Заполняет контейнер, сохраняя пропорции */
+  background-position: 50% 10%; /* Позиционирует изображение: 50% по горизонтали, 10% по вертикали */
+  background-repeat: no-repeat; /* Убирает повтор */
+}

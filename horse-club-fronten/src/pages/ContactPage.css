@@ -1,0 +1,17 @@
+/* src/pages/ContactPage.css */
+.contact-page {
+    margin-top: 20px;
+  }
+  
+  .contact-images {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .contact-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  

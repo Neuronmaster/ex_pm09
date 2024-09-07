@@ -1,6 +1,7 @@
 // src/pages/ServicesPage.js
-import React, { useState } from 'react';
-import ServiceItem from '../components/ServiceItem';
+import React from 'react';
+import Gallery from '../components/Gallery';
+import './ServicesPage.css'; // Подключаем стили для страницы услуг
 
 const services = [
   { id: 1, name: 'Конные прогулки по живописному лесу', price: 1200 },
@@ -11,22 +12,18 @@ const services = [
 ];
 
 const ServicesPage = () => {
-  const [filteredServices, setFilteredServices] = useState(services);
-
-  // Пример фильтрации по цене (например, ниже 1500)
-  const filterServices = (maxPrice) => {
-    setFilteredServices(services.filter(service => service.price <= maxPrice));
-  };
-
   return (
     <div className="services-page">
       <h2>Наши услуги</h2>
-      <button onClick={() => filterServices(1500)}>Показать услуги до 1500 руб.</button>
-      <div className="services-list">
-        {filteredServices.map(service => (
-          <ServiceItem key={service.id} service={service} />
+      <ul>
+        {services.map((service) => (
+          <li key={service.id}>
+            <h3>{service.name}</h3>
+            <p>Цена: {Array.isArray(service.price) ? service.price.join(' руб. или ') : service.price} руб.</p>
+          </li>
         ))}
-      </div>
+      </ul>
+      <Gallery />
     </div>
   );
 };

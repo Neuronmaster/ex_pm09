@@ -1,13 +1,13 @@
 /* src/components/Slider.css */
 .slider {
-    display: flex; /* Можно использовать для горизонтального расположения, если это слайдер */
-    overflow: hidden; /* Скрыть излишки, если изображения будут больше контейнера */
+    display: flex;
+    overflow: hidden;
   }
   
   .slider img {
-    width: 300px; /* Задайте желаемую ширину */
-    height: 200px; /* Задайте желаемую высоту */
-    object-fit: cover; /* Сохраняет пропорции и обрезает лишнее */
-    margin-right: 10px; /* Отступ между изображениями */
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
   }
   
