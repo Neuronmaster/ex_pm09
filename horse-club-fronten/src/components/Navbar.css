@@ -1,0 +1,27 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #333; /* Цвет фона меню */
+    padding: 10px 20px; /* Внутренние отступы */
+  }
+  
+  .navbar-list {
+    list-style: none; /* Убираем маркеры списка */
+    display: flex; /* Делаем элементы списка горизонтальными */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+  }
+  
+  .navbar-item {
+    margin-right: 20px; /* Расстояние между пунктами меню */
+  }
+  
+  .navbar-item a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: white; /* Цвет текста ссылок */
+    font-weight: bold; /* Жирный текст */
+  }
+  
+  .navbar-item a:hover {
+    color: #ddd; /* Цвет текста при наведении */
+  }
+  
