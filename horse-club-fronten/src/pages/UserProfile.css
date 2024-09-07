@@ -1,0 +1,55 @@
+/* src/pages/UserProfile.css */
+.user-profile {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .user-info label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .user-info input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-info button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-info button:hover {
+    background-color: #45a049;
+  }
+  
+  .records-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .records-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
