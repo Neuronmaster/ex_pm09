@@ -2,12 +2,17 @@
 import React from 'react';
 
 const Slider = () => {
-  // Пример слайдера с использованием простой разметки, можно заменить на Swiper
+  const images = [
+    '../images/image1.jpg', // TODO Заменить на фактические пути к изображениям
+    '../images/image2.jpg',
+    '../images/image3.jpg',
+  ];
+
   return (
     <div className="slider">
-      <img src="/images/event1.jpg" alt="Event 1" />
-      <img src="/images/event2.jpg" alt="Event 2" />
-      <img src="/images/event3.jpg" alt="Event 3" />
+      {images.map((src, index) => (
+        <img key={index} src={src} alt={`Slide ${index + 1}`} />
+      ))}
     </div>
   );
 };
