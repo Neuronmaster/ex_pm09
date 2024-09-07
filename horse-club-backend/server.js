@@ -25,3 +25,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 });
+
+const serviceRoutes = require('./routes/services');
+
+app.use('/api/services', serviceRoutes);
