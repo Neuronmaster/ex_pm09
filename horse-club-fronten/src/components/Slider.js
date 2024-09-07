@@ -1,11 +1,12 @@
 // src/components/Slider.js
 import React from 'react';
+import './Slider.css'; // Импортируем стили для слайдера
 
 const Slider = () => {
   const images = [
-    '../images/image1.jpg', // TODO Заменить на фактические пути к изображениям
-    '../images/image2.jpg',
-    '../images/image3.jpg',
+    '/images/image1.jpg',
+    '/images/image2.jpg',
+    '/images/image3.jpg',
   ];
 
   return (
